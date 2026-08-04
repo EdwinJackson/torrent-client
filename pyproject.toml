@@ -1,0 +1,24 @@
+[project]
+name = "torrent-client"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Edwin Jackson",email = "edwinjackson1991@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.7,<4.0"
+dependencies = [
+    "pybittorrent (>=0.5.6,<0.6.0)",
+    "requests (>=2.22.0,<2.23.0)"
+]
+
+[project.scripts]
+download-torrent = "torrent_client.client:download_torrent_file"
+clean-peers = "clean_peers:clean_peers_file"
+
+[tool.poetry]
+packages = [{include = "torrent_client", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
