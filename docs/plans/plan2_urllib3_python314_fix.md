@@ -49,3 +49,6 @@ If exploring newer Python versions reveals compatibility issues, consider:
 - Adding explicit Python version constraint in pyproject.toml
 - Documenting Python 3.10+ incompatibility
 - Providing migration path for future upgrades
+
+## Status
+COMPLETE — 2026-09-22. Resolution: stay on Python 3.9 (urllib3 1.25.11 legacy-loader breakage on 3.12+ documented in README). Entry-point consistency kept on `download_torrent_file` (the "mismatch" no longer existed on main; the worktree rename was discarded — see plan 4 decision 1). Import chain verified via `poetry run download-torrent --help`.

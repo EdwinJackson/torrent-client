@@ -14,10 +14,13 @@ dependencies = [
 
 [project.scripts]
 download-torrent = "torrent_client.client:download_torrent_file"
-clean-peers = "clean_peers:clean_peers_file"
+clean-peers = "clean_peers:main"
 
 [tool.poetry]
-packages = [{include = "torrent_client", from = "src"}]
+packages = [
+    {include = "torrent_client", from = "src"},
+    {include = "clean_peers.py"},
+]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

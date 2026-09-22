@@ -69,3 +69,6 @@ python = ">=3.9,<3.10"
 4. Update documentation (README, CI configs)
 5. Run comprehensive tests on Python 3.9
 6. Document Python version strategy and migration path
+
+## Status
+COMPLETE — 2026-09-22. `requires-python = ">=3.9,<3.10"`, `.python-version` = 3.9, `mise.toml` 3.9, runtime guard in `client.py` (fires on 3.10+, verified), README documents setup/strategy/migration, `poetry lock` regenerated (only the 3.7/3.8-only `typing-extensions` entry dropped). CI item skipped by decision (no pipeline exists; local project — plan 4 decision 3).

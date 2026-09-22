@@ -51,3 +51,6 @@
 - `git worktree list` shows only the primary checkout; `git branch` shows only `main` (+ origin remote refs).
 - main contains: cleaned peers_file.txt, enhanced clean_peers.py, pinned Python constraint + `.python-version` + runtime guard, populated README, refreshed lock, all 4 plan docs tracked.
 - Phase 4 checks all green; `git log` shows merge commit from Phase 1 and implementation commits from Phases 3/5; pushed.
+
+## Status
+COMPLETE — 2026-09-22. All five phases executed: Plan 1 merged (`afed1c3`), urllib3 worktree+branch discarded, env standardization landed, verification green (incl. pre-fix `ValueError` reproduction), worktrees reduced to primary checkout only. Extra defect found+fixed in Phase 4: `clean-peers` console script was never installed (root module unpackaged; entry bypassed argparse) → `clean_peers.py` added to `packages`, entry points to `clean_peers:main`.

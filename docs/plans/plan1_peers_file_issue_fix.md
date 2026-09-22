@@ -64,3 +64,6 @@ There appear to be empty lines between valid entries which may cause parsing iss
 - Test with a small sample before running on entire file
 - Verify the script handles edge cases gracefully
 
+
+## Status
+COMPLETE — 2026-09-22. Implemented on `peers-file-cleanup` (`fa05146`), merged to `main` (`afed1c3`). Peers file parses cleanly via `PyBitTorrent.Utils.read_peers_from_file` (56 peers, 0 blank lines); the original file's `ValueError` crash reproduced pre-merge and is gone post-merge.
