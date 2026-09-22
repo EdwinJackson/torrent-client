@@ -6,7 +6,7 @@ authors = [
     {name = "Edwin Jackson",email = "edwinjackson1991@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.7,<4.0"
+requires-python = ">=3.9,<3.10"
 dependencies = [
     "pybittorrent (>=0.5.6,<0.6.0)",
     "requests (>=2.22.0,<2.23.0)"
